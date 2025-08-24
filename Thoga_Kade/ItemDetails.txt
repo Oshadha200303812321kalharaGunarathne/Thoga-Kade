@@ -1,0 +1,35 @@
+Use Thoga_Kade;
+
+CREATE TABLE Items(
+	Item_Code VARCHAR(10) PRIMARY KEY,
+	Description VARCHAR(50),
+	Pack_Size VARCHAR(20),
+	Unit_Price DECIMAL(6,2),
+	Qty_On_Hand INT(5)
+);
+
+DESC Items;
+
+INSERT INTO Items(Item_Code, Description, Pack_Size, Unit_Price, Qty_On_Hand)VALUES(
+    -> ('P001','Keerisamba Retail','1kg',105.00,3000),
+    -> ('P002','Sugar 5Kg','3kg',520.00,200),
+    -> ('P003','Keerisamba 10Kg','10kg',995.00,36),
+    -> ('P004','Astra Margarine 250g','250g',129.00,25),
+    -> ('P005','Lipton Ceylon Tea 400g','400g',360.00,20),
+    -> ('P006','Sprite 1.5L','1.5L',160.00,30),
+    -> ('P007','Rice Noodle 200g','200g',65.00,25),
+    -> ('P008','Milo Packet 400g','400g',240.00,33),
+    -> ('P009','Anchor F/C Milk powder 450g','450g',220.00,93),
+    -> ('P010','Wattana Dhal 500g','500g',90.00,83),
+    -> ('P011','Raththi Milk powder 450g','450g',380.00,80),
+    -> ('P012','Orient Green Gram 500g','500g',118.00,39),
+    -> ('P013','Sinnamon Stick 100g','100g',25.00,30),
+    -> ('P014','Raw Chillie 100g','100g',40.00,30),
+    -> ('P015','White Suger 500g','500g',55.00,45)
+    -> );
+
+SELECT * FROM Items;
+
+
+
+

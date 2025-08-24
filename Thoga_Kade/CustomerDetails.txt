@@ -1,0 +1,45 @@
+CREATE DATABASE Thogakade;
+
+USE Thogakade;
+
+CREATE TABLE Customers(
+	Cust_ID VARCHAR(10) PRIMARY KEY,
+	Title VARCHAR(10),
+	Name VARCHAR(20),
+	DOB DATE,
+	Salary DECIMAL(10,2),
+	Address VARCHAR(30),
+	City VARCHAR(20),
+	Province VARCHAR(20),
+	Postal_Code VARCHAR(10),
+);
+
+DESC Customers;
+
+INSERT INTO Customers(Cust_ID,Title,Name,DOB,Salary,Address,City,Province,Postal_Code VALUES(
+     ->('C001','Mr.','Danapala','1981-2-6',40000,'No.20 Walana','Panadura','Western',12500),
+     ->('C002','Mr.','Kamal','1985-08-22',50000,'No 200, Thalpitiya','Kandy','Central',20000),
+     ->('C003','Mr.','Amarabandu','1988-01-10',25000,'No 100, Malabe','Colombo','Western',12500),
+     ->('C004','Mr.','Somapala','1952-01-22',60000,'No .120, Rathgama','Galle','Southern',12213),
+     ->('C005','Mr.','Jinadasa','1975-05-18',90000,'N0. 244 Beddegama','Aluthgama','Southern',24333),
+     ->('C006','Miss.','Kumarihami','1990-10-23',70000,'No. 230, Galle Road','Panadura','Western',12500),
+     ->('C007','Miss.','Gunawathee','1984-05-07',80000,'No, Galle Road','Ambalangoda','Southern',43343),
+     ->('C008','Ms.','Leelawathee','1950-04-08',59000,'No 12, Rathnapura Road','Madampe','Sabaragamuwa',32312),
+     ->('C009','Ms.','Amarawathee','1972-03-19',76000,'No122, Anuradhapura Road','Kurunegala','Wayamba',23233),
+     ->('C010','Mr.','Dayapala','1983-12-29',40000,'No. 234, Attidiya Road','Dehiwala','Western',23434),
+     ->('C011','Miss.','Premalatha','1980-01-31',10000,'No. Maradan kadawala Road','Thrincomalee','Eastern',24545),
+     ->('C012','Mr.','Jinadasa','1948-04-13',56000,'No.124, Jaffna Road','Rambawa','North Western',34400),
+     ->('C013','Mr.','Viyaskanth','1978-09-23',40000,'No.340 Jaffna Road','Jaffna','Northern',12122),
+     ->('C014','Miss.','Gnanalatha','1979-10-15',98000,'No. 23, Badulla Road','Monaragala','Uva',90140),
+     ->('C015','Mr.','Amaradasa','1993-05-01',80000,'No. Katugastota Road','Kandy','Central',23321)
+     ->);
+
+SELECT * FROM Customers;
+
+
+
+
+
+
+
+
